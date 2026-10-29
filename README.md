@@ -57,13 +57,28 @@ MÍMIR combines practical tools into one consistent interface. These are not 59 
 
 MÍMIR is **local-first**, with no built-in MÍMIR account, telemetry or analytics. Some user-initiated tools, including software update discovery and Windows repair sources, may connect to external services. Diagnostic output and exported reports can include local machine details, so review them before sharing.
 
-## Download & availability
+## ⚔️ Portable Windows app
 
-**Current status: Development preview.** A public Windows executable will appear on the [**Releases page**](https://github.com/francisco-carreiro/mimir-forge/releases) after validation. **No public release is available yet.**
+**No installation required.** MÍMIR FORGE is designed to be distributed as a **single, self-contained Windows x64 executable**. Run it from a folder on your PC or removable storage, without a setup wizard and without separately installing .NET.
 
-The application targets **Windows 11**. When a release is available, look for the Windows executable and its accompanying SHA-256 checksum.
+- **Windows 11 x64** — designed for modern Windows 11 PCs.
+- **Single EXE** — no traditional installer or permanent installation required.
+- **Local-first** — scans, settings and history stay on your device.
+- **Administrator access only when needed** — Windows UAC is shown for protected operations.
+- **Portable launch, persistent recovery history** — the app stores change journals and audit metadata under your Windows user profile (`%LOCALAPPDATA%\\MimirForge`). Removing the EXE does not automatically erase those records.
+- **Internet is optional for most tools** — package-update discovery and certain servicing operations may access external sources.
 
-MÍMIR FORGE is still being tested; use caution with repair tools, especially on important computers.
+*Portable describes distribution and launch behavior, not a promise of zero temporary files or zero persistent data. Keep the recovery records if you need to review or undo earlier changes.*
+
+## 📦 Download — v1.0 Portable Preview
+
+**Planned first public edition: MÍMIR FORGE v1.0.0 — Portable Preview.**
+
+[**GitHub Releases — Windows downloads**](https://github.com/francisco-carreiro/mimir-forge/releases)
+
+**Availability:** The Windows executable is being prepared for its first public release. The Releases page will provide the EXE and a corresponding SHA-256 checksum once published; until then, there is no public download.
+
+The application is an **unsigned development preview**, not a validated production servicing tool. Windows may show a publisher or SmartScreen warning. Avoid making repair changes on important devices until the recovery flow has been tested and your files are backed up.
 
 ---
 
